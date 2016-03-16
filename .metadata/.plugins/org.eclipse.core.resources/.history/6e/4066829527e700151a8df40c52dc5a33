@@ -1,0 +1,56 @@
+package com.opit.test.webdriver;
+
+import java.util.concurrent.TimeUnit;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+
+public class CalenderSelectionTest {
+	
+	//instance variables
+	private WebDriver driver;
+	private String baseURL;
+
+	@Before
+	public void setUp() throws Exception {
+		driver = new FirefoxDriver();
+		baseURL = "http://www.expedia.com";
+		
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	}
+
+//	@After
+//	public void tearDown() throws Exception {
+//		driver.quit();
+//	}
+
+	@Test
+	public <WebElement> void testCalenderSelection() {
+		driver.get(baseURL);
+		driver.findElement(By.id("tab-flight-tab")).click();
+		
+		// textbox using selenium
+		driver.findElement(By.id("flight-origin")).sendKeys("FSO");
+		driver.findElement(By.id("flight-destination")).sendKeys("LON");
+		driver.findElement(By.id("flight-departing-label")).click();
+		//driver.findElement(By.className("text calendar departing icon-before col")).click();
+		driver.findElement(By.className("cal-date start")).sendKeys("03/29/2016");
+		
+		// driver.findElement(By.xpath("//td[text()='Sept']/../..//a[text()='27']")).click();
+		 driver.findElement(By.xpath("//[id='flight-departing']"));
+		//Select sell = new Select (driver.findElement(By.id("flight-children"));
+		
+		//list<WebElement> options = sell.getOptions();
+		//for()
+		
+		
+		//fail("Not yet implemented");
+	}
+
+}

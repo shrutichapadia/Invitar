@@ -1,0 +1,24 @@
+package TestingSelenium;
+
+import static org.junit.Assert.*;
+
+import org.junit.runner.RunWith;
+	import org.junit.runners.Suite;
+	import org.junit.runners.Suite.SuiteClasses;
+
+	import TestingSelenium.WebdriverTest1;
+
+
+
+		
+	@RunWith(Suite.class)
+	@SuiteClasses({
+		WebdriverTest1.class,
+			WebdriverTest2.class,
+			
+			
+		})
+
+public class WebdriverTestSuite {	
+}
+

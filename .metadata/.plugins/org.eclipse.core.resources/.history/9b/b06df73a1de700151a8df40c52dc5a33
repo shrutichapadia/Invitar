@@ -1,0 +1,14 @@
+package TestingSelenium;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class WebdriverTestSuite {
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

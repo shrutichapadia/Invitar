@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Googlesuite">
+  <test verbose="2" name="GoogleNewsTest">
+    <classes>
+      <class name="com.opit.testng.GoogleNews"/>
+    </classes>
+  </test> <!-- Default test -->
+  <test verbose="2" name="GoogleMailTest">
+    <classes>
+      <class name="com.opit.testng.GmailTest"/>
+    </classes>
+  </test>
+  <test verbose="2" name="GoogleUserRegistrationTest">
+    <classes>
+      <class name="com.opit.testng.ParameterizedTestNg"/>
+    </classes>
+  </test>
+</suite> <!-- Default suite -->

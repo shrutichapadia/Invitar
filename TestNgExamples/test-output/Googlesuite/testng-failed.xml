@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Googlesuite]">
+  <test name="GoogleNewsTest(failed)">
+    <classes>
+      <class name="com.opit.testng.GmailTest">
+        <methods>
+          <include name="tearDownTests"/>
+          <include name="closeBrowser"/>
+          <include name="openBrowser"/>
+          <include name="prepareTests"/>
+        </methods>
+      </class> <!-- com.opit.testng.GmailTest -->
+      <class name="com.opit.testng.GoogleNews">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="openBrowser"/>
+          <include name="testNewsFeed"/>
+          <include name="tearDownEnvironment"/>
+          <include name="prepareEnvironment"/>
+        </methods>
+      </class> <!-- com.opit.testng.GoogleNews -->
+    </classes>
+  </test> <!-- GoogleNewsTest(failed) -->
+</suite> <!-- Failed suite [Googlesuite] -->

@@ -1,0 +1,27 @@
+package TestingSelenium;
+
+import static org.junit.Assert.fail;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+
+public class AmazonCSSLocatorTest {
+
+	@Before
+	public void setUp() throws Exception {
+		private WebDriver driver;
+		
+	}
+
+	@After
+	public void tearDown() throws Exception {
+	}
+
+	@Test
+	public void test() {
+	
+	}
+
+}

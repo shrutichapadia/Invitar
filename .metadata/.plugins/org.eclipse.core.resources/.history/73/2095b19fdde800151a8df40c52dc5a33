@@ -1,0 +1,28 @@
+package com.opit.test.webdriver;
+
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite;
+import org.junit.runners.Suite.SuiteClasses;
+
+import TestingSelenium.WebdriverTest1;
+
+
+
+	
+	@RunWith(Suite.class)
+	@SuiteClasses({
+		todayTest.class,
+		ModuleTest.class,
+		PracticeTest.class
+		
+	})
+	
+	public class firstsuiteTest {
+}

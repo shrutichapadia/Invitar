@@ -1,0 +1,34 @@
+package TestingSelenium;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+
+
+public class WebdriverTest1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		WebDriver driver = new FirefoxDriver();
+		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+//		System.setProperty("webdriver.chrome.driver"Chromedriver path");
+//		WebDriver ChromeDriver = new ChromeDriver();
+		//driver.get("www.google.com");
+		driver.get("https://www.southwest.com/");
+		driver.findElement(By.id("booking-form--flight-tab"));
+		driver.findElement(By.id("trip-type-one-way")).click();
+		driver.findElement(By.id("air-city-departure")).sendKeys("SFO");
+		driver.findElement(By.id("air-city-arrival")).sendKeys("NYC");
+		driver.findElement(By.id("air-date-departure")).getAttribute("03/03/2016");
+		driver.findElement(By.id("air-pax-count-adults")).sendKeys("3");
+		driver.findElement(By.linkText("booking-form--bottom-options-option-link")).click();
+		//driver.getPageSource();
+		driver.close();
+				
+	}
+
+}

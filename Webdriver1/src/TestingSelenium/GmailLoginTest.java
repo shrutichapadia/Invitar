@@ -1,0 +1,30 @@
+package TestingSelenium;
+
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+public class GmailLoginTest {
+	
+	//in CSS locators '#email' is write for id
+	// class with .slide-out with .
+	//input[name='name']
+	// li[id$='999'] $means begins with those letter 
+	
+
+	@Before
+	public void setUp() throws Exception {
+	}
+
+	@After
+	public void tearDown() throws Exception {
+	}
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}
