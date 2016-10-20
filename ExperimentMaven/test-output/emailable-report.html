@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">51.8 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Default test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">example.TestngProg1</td><td><a href="#m1"><b>testGoogle</b>  </a></td><td class="numi">1</td><td>1459641910545</td><td class="numi">51309</td></tr>
+</table>
+<h1>Default test</h1>
+<h2 id="m1">example.TestngProg1:testGoogle</h2>
+<div style="padding-left:3em">
+<p>Failed to connect to binary FirefoxBinary(/Applications/Firefox.app/Contents/MacOS/firefox-bin) on port 7055; process output follows: 
+: {&quot;app-profile&quot;:{&quot;fxdriver@googlecode.com&quot;:{&quot;d&quot;:&quot;/var/folders/5t/cklrpd6s5pjgw8mvg4592fl80000gn/T/anonymous6113215824106626026webdriver-profile/extensions/fxdriver@googlecode.com&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;2.45.0&quot;,&quot;st&quot;:1459641910000,&quot;mt&quot;:1459641910000}},&quot;app-system-defaults&quot;:{&quot;loop@mozilla.org&quot;:{&quot;d&quot;:&quot;/Applications/Firefox.app/Contents/Resources/browser/features/loop@mozilla.org.xpi&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;0.1&quot;,&quot;st&quot;:1458362229000}},&quot;app-global&quot;:{&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;:{&quot;d&quot;:&quot;/Applications/Firefox.app/Contents/Resources/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;45.0.1&quot;,&quot;st&quot;:1458362229000}}}
+1459641916820	addons.xpi	DEBUG	Existing add-on fxdriver@googlecode.com in app-profile
+1459641916820	addons.xpi	DEBUG	getModTime: Recursive scan of loop@mozilla.org
+1459641916820	addons.xpi	DEBUG	Existing add-on loop@mozilla.org in app-system-defaults
+1459641916820	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1459641916821	addons.xpi	DEBUG	Existing add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} in app-global
+1459641916821	addons.xpi	DEBUG	getInstallState changed: false, state: {&quot;app-profile&quot;:{&quot;fxdriver@googlecode.com&quot;:{&quot;d&quot;:&quot;/var/folders/5t/cklrpd6s5pjgw8mvg4592fl80000gn/T/anonymous6113215824106626026webdriver-profile/extensions/fxdriver@googlecode.com&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;2.45.0&quot;,&quot;st&quot;:1459641910000,&quot;mt&quot;:1459641910000}},&quot;app-system-defaults&quot;:{&quot;loop@mozilla.org&quot;:{&quot;d&quot;:&quot;/Applications/Firefox.app/Contents/Resources/browser/features/loop@mozilla.org.xpi&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;0.1&quot;,&quot;st&quot;:1458362229000}},&quot;app-global&quot;:{&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;:{&quot;d&quot;:&quot;/Applications/Firefox.app/Contents/Resources/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;45.0.1&quot;,&quot;st&quot;:1458362229000}}}
+1459641916822	addons.xpi	DEBUG	No changes found
+1459641916826	addons.xpi	DEBUG	Registering manifest for /Applications/Firefox.app/Contents/Resources/browser/features/loop@mozilla.org.xpi
+1459641916826	addons.xpi	DEBUG	Loading bootstrap scope from /Applications/Firefox.app/Contents/Resources/browser/features/loop@mozilla.org.xpi
+1459641916834	addons.xpi	DEBUG	Calling bootstrap method startup on loop@mozilla.org version 0.1
+1459641916845	addons.xpi-utils	DEBUG	Starting async load of XPI database /var/folders/5t/cklrpd6s5pjgw8mvg4592fl80000gn/T/anonymous6113215824106626026webdriver-profile/extensions.json
+1459641916850	addons.manager	DEBUG	Starting provider: &lt;unnamed-provider&gt;
+1459641916850	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+1459641916850	addons.manager	DEBUG	Provider finished startup: &lt;unnamed-provider&gt;
+1459641916857	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1459641916857	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1459641916858	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1459641916858	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1459641916858	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1459641916858	addons.manager	DEBUG	Starting provider: GMPProvider
+1459641916861	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1459641916861	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1459641916861	addons.manager	DEBUG	Starting provider: PluginProvider
+1459641916861	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1459641916861	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1459641916861	addons.manager	DEBUG	Completed startup sequence
+1459641917039	addons.xpi-utils	DEBUG	Async JSON file read took 0 MS
+1459641917039	addons.xpi-utils	DEBUG	Finished async read of XPI database, parsing...
+1459641917040	addons.xpi-utils	DEBUG	Successfully read XPI database
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+1459641917109	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1459641917109	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1459641917109	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;shrutis-MacBook-Pro.local&apos;, ip: &apos;192.168.0.10&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.11&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: driver.version: FirefoxDriver</p>
+org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:130)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:246)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:114)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:191)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:186)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:182)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+<br/>at example.TestngProg1.testGoogle(TestngProg1.java:11)
+<br/>25 lines not shown
+<p>Caused by Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+: {&quot;app-profile&quot;:{&quot;fxdriver@googlecode.com&quot;:{&quot;d&quot;:&quot;/var/folders/5t/cklrpd6s5pjgw8mvg4592fl80000gn/T/anonymous6113215824106626026webdriver-profile/extensions/fxdriver@googlecode.com&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;2.45.0&quot;,&quot;st&quot;:1459641910000,&quot;mt&quot;:1459641910000}},&quot;app-system-defaults&quot;:{&quot;loop@mozilla.org&quot;:{&quot;d&quot;:&quot;/Applications/Firefox.app/Contents/Resources/browser/features/loop@mozilla.org.xpi&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;0.1&quot;,&quot;st&quot;:1458362229000}},&quot;app-global&quot;:{&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;:{&quot;d&quot;:&quot;/Applications/Firefox.app/Contents/Resources/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;45.0.1&quot;,&quot;st&quot;:1458362229000}}}
+1459641916820	addons.xpi	DEBUG	Existing add-on fxdriver@googlecode.com in app-profile
+1459641916820	addons.xpi	DEBUG	getModTime: Recursive scan of loop@mozilla.org
+1459641916820	addons.xpi	DEBUG	Existing add-on loop@mozilla.org in app-system-defaults
+1459641916820	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1459641916821	addons.xpi	DEBUG	Existing add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} in app-global
+1459641916821	addons.xpi	DEBUG	getInstallState changed: false, state: {&quot;app-profile&quot;:{&quot;fxdriver@googlecode.com&quot;:{&quot;d&quot;:&quot;/var/folders/5t/cklrpd6s5pjgw8mvg4592fl80000gn/T/anonymous6113215824106626026webdriver-profile/extensions/fxdriver@googlecode.com&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;2.45.0&quot;,&quot;st&quot;:1459641910000,&quot;mt&quot;:1459641910000}},&quot;app-system-defaults&quot;:{&quot;loop@mozilla.org&quot;:{&quot;d&quot;:&quot;/Applications/Firefox.app/Contents/Resources/browser/features/loop@mozilla.org.xpi&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;0.1&quot;,&quot;st&quot;:1458362229000}},&quot;app-global&quot;:{&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;:{&quot;d&quot;:&quot;/Applications/Firefox.app/Contents/Resources/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;45.0.1&quot;,&quot;st&quot;:1458362229000}}}
+1459641916822	addons.xpi	DEBUG	No changes found
+1459641916826	addons.xpi	DEBUG	Registering manifest for /Applications/Firefox.app/Contents/Resources/browser/features/loop@mozilla.org.xpi
+1459641916826	addons.xpi	DEBUG	Loading bootstrap scope from /Applications/Firefox.app/Contents/Resources/browser/features/loop@mozilla.org.xpi
+1459641916834	addons.xpi	DEBUG	Calling bootstrap method startup on loop@mozilla.org version 0.1
+1459641916845	addons.xpi-utils	DEBUG	Starting async load of XPI database /var/folders/5t/cklrpd6s5pjgw8mvg4592fl80000gn/T/anonymous6113215824106626026webdriver-profile/extensions.json
+1459641916850	addons.manager	DEBUG	Starting provider: &lt;unnamed-provider&gt;
+1459641916850	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+1459641916850	addons.manager	DEBUG	Provider finished startup: &lt;unnamed-provider&gt;
+1459641916857	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1459641916857	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1459641916858	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1459641916858	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1459641916858	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1459641916858	addons.manager	DEBUG	Starting provider: GMPProvider
+1459641916861	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1459641916861	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1459641916861	addons.manager	DEBUG	Starting provider: PluginProvider
+1459641916861	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1459641916861	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1459641916861	addons.manager	DEBUG	Completed startup sequence
+1459641917039	addons.xpi-utils	DEBUG	Async JSON file read took 0 MS
+1459641917039	addons.xpi-utils	DEBUG	Finished async read of XPI database, parsing...
+1459641917040	addons.xpi-utils	DEBUG	Successfully read XPI database
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+1459641917109	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1459641917109	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1459641917109	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+</p>
+org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:118)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:246)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:114)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:191)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:186)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:182)
+<br/>at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+<br/>at example.TestngProg1.testGoogle(TestngProg1.java:11)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

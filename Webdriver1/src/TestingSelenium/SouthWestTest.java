@@ -1,5 +1,6 @@
 package TestingSelenium;
 
+import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 import org.junit.After;
@@ -26,7 +27,7 @@ public class SouthWestTest {
 	@After
 	public void tearDown() throws Exception {
 		
-		driver.quit();
+		//driver.quit();
 	}
 
 	@Test
@@ -36,8 +37,8 @@ public class SouthWestTest {
 		driver.findElement(By.id("trip-type-round-trip")).click();
 		driver.findElement(By.id("air-city-departure")).sendKeys("SFO");
 		driver.findElement(By.id("air-city-arrival")).sendKeys("NYC");
-		driver.findElement(By.id("air-date-departure")).getAttribute("03/03/2016");
-		driver.findElement(By.id("air-pax-count-adults")).sendKeys("3");
+		driver.findElement(By.id("air-date-departure")).getAttribute("05/03/2016");
+		driver.findElement(By.id("air-pax-count-adults")).sendKeys("1");
 		driver.findElement(By.id("jb-booking-form-submit-button")).click();
 		driver.findElement(By.id("Out2AContainer")).click();
 		driver.findElement(By.id("Out3A")).click();
@@ -46,4 +47,19 @@ public class SouthWestTest {
 		driver.findElement(By.name("optionsItinerarySubmit")).click();
 	}
 
-}
+//    //Another Example of Data Driven Using CSV File
+//    @Test (dataProvider = "csvData")
+////    driver.get(baseURL);
+////	driver.findElement(By.id("booking-form--flight-tab"));
+////	driver.findElement(By.id("trip-type-round-trip")).click();
+//    public void csvDataExample(String departure, String arrival, Date date)
+//                  throws InterruptedException {
+//           System.out.println("Depart: " + departure + ": arrive: " + arrival
+//                        + ":Depart Date : " + date);
+//    }
+           
+    
+    }
+	
+	
+

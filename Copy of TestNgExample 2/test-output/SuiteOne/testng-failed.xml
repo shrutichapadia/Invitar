@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SuiteOne]">
+  <test name="SuiteOneCaseOne">
+    <classes>
+      <class name="com.cit.SuiteOne.SuiteOneCaseOne"/>
+    </classes>
+  </test> <!-- SuiteOneCaseOne -->
+  <test name="SuiteOneCaseTwo">
+    <classes>
+      <class name="com.cit.SuiteOne.SuiteOneCaseTwo"/>
+    </classes>
+  </test> <!-- SuiteOneCaseTwo -->
+  <test name="SuiteOneCaseOne(failed)">
+    <classes>
+      <class name="com.cit.SuiteOne.SuiteOneCaseOne">
+        <methods>
+          <include name="SuiteOneCaseOneTest"/>
+        </methods>
+      </class> <!-- com.cit.SuiteOne.SuiteOneCaseOne -->
+      <class name="com.cit.SuiteOne.SuiteOneCaseTwo">
+        <methods>
+          <include name="checkSuiteToRun"/>
+        </methods>
+      </class> <!-- com.cit.SuiteOne.SuiteOneCaseTwo -->
+    </classes>
+  </test> <!-- SuiteOneCaseOne(failed) -->
+  <test name="SuiteOneCaseTwo(failed)">
+    <classes>
+      <class name="com.cit.SuiteOne.SuiteOneCaseTwo">
+        <methods>
+          <include name="SuiteOneCaseTwoTest"/>
+          <include name="checkSuiteToRun"/>
+        </methods>
+      </class> <!-- com.cit.SuiteOne.SuiteOneCaseTwo -->
+    </classes>
+  </test> <!-- SuiteOneCaseTwo(failed) -->
+</suite> <!-- Failed suite [SuiteOne] -->

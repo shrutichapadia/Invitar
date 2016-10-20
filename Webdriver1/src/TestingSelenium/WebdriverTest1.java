@@ -26,7 +26,8 @@ public class WebdriverTest1 {
 		driver.findElement(By.id("trip-type-round-trip")).click();
 		driver.findElement(By.id("air-city-departure")).sendKeys("SFO");
 		driver.findElement(By.id("air-city-arrival")).sendKeys("NYC");
-		driver.findElement(By.id("air-date-departure")).getAttribute("03/03/2016");
+
+		driver.findElement(By.id("air-date-departure")).getAttribute("05/03/2016");
 		driver.findElement(By.id("air-pax-count-adults")).sendKeys("3");
 		driver.findElement(By.id("jb-booking-form-submit-button")).click();
 		driver.findElement(By.id("Out2AContainer")).click();

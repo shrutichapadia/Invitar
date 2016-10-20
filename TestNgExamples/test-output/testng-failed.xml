@@ -1,25 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Googlesuite]">
-  <test name="GoogleNewsTest(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test verbose="2" name="Default test">
     <classes>
-      <class name="com.opit.testng.GmailTest">
-        <methods>
-          <include name="tearDownTests"/>
-          <include name="closeBrowser"/>
-          <include name="openBrowser"/>
-          <include name="prepareTests"/>
-        </methods>
-      </class> <!-- com.opit.testng.GmailTest -->
-      <class name="com.opit.testng.GoogleNews">
-        <methods>
-          <include name="closeBrowser"/>
-          <include name="openBrowser"/>
-          <include name="testNewsFeed"/>
-          <include name="tearDownEnvironment"/>
-          <include name="prepareEnvironment"/>
-        </methods>
-      </class> <!-- com.opit.testng.GoogleNews -->
+      <class name="com.opit.testng.DataDrivenExample"/>
     </classes>
-  </test> <!-- GoogleNewsTest(failed) -->
-</suite> <!-- Failed suite [Googlesuite] -->
+  </test> <!-- Default test -->
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.opit.testng.DataDrivenExample">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testinfo"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.opit.testng.DataDrivenExample -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

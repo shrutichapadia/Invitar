@@ -9,7 +9,7 @@ public class PatternMatcherExp {
 	Matcher m = p.matcher("as");  
 	boolean b = m.matches();  
 	  
-	//2nd way  
+	//2nd way  ,jklmlo
 	boolean b2=Pattern.compile(".s").matcher("as").matches();  
 	  
 	//3rd way  

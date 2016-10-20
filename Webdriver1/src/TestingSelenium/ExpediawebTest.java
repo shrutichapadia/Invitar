@@ -32,9 +32,9 @@ public class ExpediawebTest {
 
 	@Test
 	public void ExpediaTest() throws InterruptedException {
-	
-		WebElement flighttab = driver.findElement(By.id("tab-flight-tab"));
-		flighttab.click();
+		Thread.sleep(2000);
+		driver.findElement(By.id("tab-flight-tab")).click();
+		//flighttab.click();
 	
 		System.out.println("hiiiiiiiii");
 		WebElement flightfrom = driver.findElement(By.id("flight-origin"));

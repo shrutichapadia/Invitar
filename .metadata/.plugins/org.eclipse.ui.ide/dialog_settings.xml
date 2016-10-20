@@ -5,6 +5,14 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="/Users/shruti/Documents/workspace/SeleniumDataDriven "/>
+			<item value="/Users/shruti/Documents/workspace/DataDrivenTest"/>
+			<item value="/Users/shruti/Documents/workspace/DataDrivenTest/SeleniumDataDriven"/>
+			<item value="/Users/shruti/Documents/workspace/Disney"/>
+			<item value="/Users/shruti/Documents/workspace/fundamental/InheritanceAndPoly 3"/>
+			<item value="/Users/shruti/Documents/workspace/fundamental/InheritanceAndPoly"/>
+			<item value="/Users/shruti/Documents/workspace/mvndatadriventestdemo/MvnDataDrivenExample"/>
+			<item value="/Users/shruti/Documents/workspace/TestNgExamples"/>
 			<item value="/Users/shruti/Documents/workspace/Testing/WebDriverMarchBatch"/>
 			<item value="/Users/shruti/Documents/workspace/untitled folder"/>
 			<item value="/Users/shruti/Documents/workspace/tenp"/>
@@ -14,11 +22,17 @@
 			<item value=""/>
 		</list>
 	</section>
+	<section name="ResourceNavigator">
+		<item value="Aggregate for window 1453866276832" key="ResourceWorkingSetFilter.STORE_WORKING_SET"/>
+		<item value="1" key="ResourceViewer.STORE_SORT_TYPE"/>
+	</section>
 	<section name="NewWizardAction">
-		<item value="org.eclipse.jdt.ui.wizards.JavaProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<item value="org.eclipse.wst.xml.ui.XMLExampleProjectCreationWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
 			<item value="org.eclipse.jdt.ui.java"/>
 			<item value="org.eclipse.m2e"/>
+			<item value="org.eclipse.wst.web.ui"/>
+			<item value="org.eclipse.ui.Examples"/>
 		</list>
 	</section>
 	<section name="BasicNewProjectResourceWizard">

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="24" started-at="2016-04-03T01:28:20Z" finished-at="2016-04-03T01:28:20Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="24" started-at="2016-04-03T01:28:20Z" finished-at="2016-04-03T01:28:20Z">
+      <class name="com.opit.test.testng.RegTest">
+        <test-method status="PASS" signature="testReg(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.opit.test.testng.RegTest@73035e27]" name="testReg" duration-ms="6" started-at="2016-04-02T18:28:20Z" data-provider="regTestDataProvider" finished-at="2016-04-02T18:28:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Himesh]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Jindal]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[jindal.himesh@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testReg -->
+        <test-method status="PASS" signature="testReg(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.opit.test.testng.RegTest@73035e27]" name="testReg" duration-ms="1" started-at="2016-04-02T18:28:20Z" data-provider="regTestDataProvider" finished-at="2016-04-02T18:28:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Anuj]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Patel]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[anuj.patel@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testReg -->
+      </class> <!-- com.opit.test.testng.RegTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

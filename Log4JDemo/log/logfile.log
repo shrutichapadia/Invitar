@@ -1,0 +1,2 @@
+2016-03-27 18:15:20,924 {HH:mm:ss} DEBUG [main] - com.guruanalyst.test.LogDemo.main 11 - Testing...logging into a file
+2016-03-27 19:54:36,706 {HH:mm:ss} DEBUG [main] - com.guruanalyst.test.LogDemo.main 12 - Testing...logging into console
